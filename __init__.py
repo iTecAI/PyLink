@@ -30,5 +30,5 @@ class PyLink:
         self.directory = directory
     
     def serve_forever(self):
-        self.server = Popen([self.python_path,self.ip,self.server_port,str(self.directory)])
+        self.server = Popen([self.python_path,self.ip,str(self.server_port),str(self.directory)])
         self.api.serve_forever()

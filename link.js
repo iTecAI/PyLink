@@ -1,7 +1,7 @@
 function command (command, data, port, callback) {
     var sendData = {
         "command":command,
-        "data":data
+        "kwargs":data
     };
     $.getJson(
         self.location.hostname + ':' + port.toString(),
