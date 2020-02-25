@@ -3,7 +3,7 @@ function command (command, data, port, callback) {
         "command":command,
         "kwargs":data
     };
-    $.getJson(
+    $.getJSON(
         self.location.hostname + ':' + port.toString(),
         sendData,
         callback
