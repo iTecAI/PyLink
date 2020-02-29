@@ -31,6 +31,8 @@ def make_handler(_link):
                 self.send_response(404)
                 self.send_header('Access-Control-Allow-Origin','*')
                 self.end_headers()
+        def log_message(self, format, *args):
+            return
     return Handler
 
 class PyLink:
